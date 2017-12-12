@@ -1,0 +1,63 @@
+@import 'main.css';
+
+html {
+  background: #222 url() bottom right no-repeat;
+  height: 100%;
+  background-position: fixed;
+  overflow-y: scroll;
+}
+
+body {
+  background: none;
+  line-height: 1.5;
+  color: #f5f5f5;
+  font: 'Source Sans Pro', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Abril Fatface', cursive;
+  margin-top: 0;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+.navbar-brand, .navbar-nav li a {
+  color: #f5f5f5;
+  font-weight: bold;
+}
+
+.navbar-brand:hover, .navbar-nav li a:hover {
+  color: #f5f5f5;
+  font-weight: bold;
+  background-color: none;
+}
+
+.navbar-nav li a:after {
+  content: '/';
+  margin-left: 30px;
+}
+
+.navbar-nav li:last-child a:after {
+  content: '';
+}
+
+.navbar-toggle {
+  background: #111;
+}
+
+.navbar-toggle .icon-bar {
+  background: #f5f5f5;
+}
+
+@media (max-width: 768px) {
+  .navbar-nav li a:after {
+    content: '';
+  }
+  .navbar-nav li a {
+    border-radius: 4px;
+    background: #111;
+    margin-bottom: 3px;
+  }
+}
